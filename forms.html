@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-with, initeial-scale=1.0">
+	<meta httpd-equil="X-UA-Campatible" content="ie-edge">
+	<meta name="keyword" content="html,html forms, web development">
+
+	<title>forms</title>
+</head>
+<body>
+
+	<h2>this is HTML Form </h2>
+	<form action="www.facebook.com">  <!--  let us assume that we are using php in backend so we add backend.php -->
+
+		<div>    <!-- it is use to divide to line -->
+			<label for="name">name:</label>
+			<input id="name" type="text" name="myName" required="true">
+		</div><br> <!-- using br is not recemented for line braking use css for it --> 
+		<div>
+			<label for="rollno">roll no:</label>
+			<input id="rollno" type="text" name="myRoll">
+		</div><br>	
+		<div>
+			<label for="email">Email:</label>
+			<input id="email" type="Email" name="myEmail" placeholder="example@gmail.com">
+		</div><br>
+		<div>
+			DOB:<input type="date" name="myDOB">
+		</div><br>
+		<div>
+			<label for="experiance">Year of exp:</label>
+			<input id="experiance" type="number" name="experiance" required>
+		</div><br>
+		<div>
+			did you fill the the form ?<input type="checkbox" name="myEligibily" >
+		</div><br>
+		<div>
+			Male <input type="radio" name="myGender" value="Male">
+			Female <input type="radio" name="myGender" value="Female"> or Others <input type="radio" name="myGender" value="Others">
+		</div><br>
+		<div>
+			Write about your self:<br><textarea name="bio"></textarea>
+		</div>
+		<div>
+			<input type="submit" name="submitNow">
+			<input type="reset" name="ResetNow">
+		</div><br>
+	</form>
+	<h2>Log in</h2>
+	<form action="www.facebook.com">
+		<label for="username">username:</label>
+		<input id="username" type="text" placeholder="usermane" name="userName">
+		<label for="password">password:</label>
+		<input id="password" type="password" placeholder="password" name="passWord">
+		<input type="submit" name="submit">
+		<p><strong>sellect colour:</strong></p>
+		<select name="colour">
+			<option>blue</option>
+			<option>red</option>
+			<option>yellow</option>
+			<option>green</option>
+		</select>
+		<p>whats your mood:</p>
+		<select name="mood">
+			<option value="happy">:-)</option>
+			<option value="emotional">:-[</option>
+			<option value="sad">:-((</option>
+		</select>
+		<button>Go</button>
+	</form>
+	
+
+</body>
+</html>
